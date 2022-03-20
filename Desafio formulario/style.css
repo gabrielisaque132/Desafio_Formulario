@@ -1,0 +1,195 @@
+
+
+:root {
+ --input-linear: linear-gradient(120deg, #b509ff, #7600a9);
+  --input-error: red;
+  --button-linear: linear-gradient(120deg, #170db3, #00C2CB, #170db3);
+  --button-disabled: #acacac;
+  --button-success: rgb(18, 151, 107);
+  --white: #fff;
+  --black: #303030;
+  --gray: #929292;
+  --light-gray: #cfcfcf;
+  --border-height: 1px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.text1{
+  display: flex;
+  margin-right: 59%;
+
+}
+.text2{
+  display: flex;
+  margin-right: 37%;
+}
+.text3{
+  display: flex;
+  margin-right: 63%;
+}
+.login {
+  height: 100vh;
+  background: var(--input-linear);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-container {
+    height: 610px;
+    width: 384px;
+    background-color: #e9e9e9;
+    box-sizing: border-box;
+    /* padding: 32px; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__title {
+  margin-bottom: 20px;
+  border-radius: 7px 7px 259px 101px;
+  width: 100%;
+  height: 25%;
+  background-color: blue
+}
+
+.login__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-input {
+  display: flex;
+  margin-right: 65%;
+ 
+}
+
+/* .login__input-border {
+  height: var(--border-height);
+  width: 100%;
+  margin-bottom: 16px;
+  background: var(--light-gray);
+  transition: .3s ease-in-out;
+} */
+
+.login__input-border::after {
+  content: '';
+  display: block;
+  height: var(--border-height);
+  width: 0;
+  margin-bottom: 16px;
+  background: var(--input-linear);
+  transition: .3s ease-in-out;
+}
+
+.login__input:focus + .login__input-border::after {
+  width: 100%;
+}
+
+.login__input-border.error {
+  background: var(--input-error);
+}
+
+.login__input-border.error::after {
+  background: var(--input-error);
+}
+
+.login__submit {
+  height: 48px;
+  width: 100%;
+  padding-left: 8px;
+  outline: none;
+  position: relative;
+  background: var(--button-linear);
+  background-size: 200%;
+  margin-bottom: 32px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+/* .login__submit:disabled {
+  background: var(--button-disabled);
+  cursor: not-allowed;
+}
+
+.login__submit:hover {
+  background-position: right;
+}
+
+.login__submit.success {
+  background: var(--button-success);
+}
+
+.login__submit.error {
+  background: var(--input-error);
+} */
+
+.login__reset {
+  font-size: 12px;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+.qtd-input{
+  display: flex;
+  margin-right: -9%;
+  width: 100%;
+}
+
+.qtd-input2{
+  width: 19%;
+  height: 121%;
+  margin-top: 1%;
+}
+.h22{
+  color: #cfcfcf;
+  font-size: 21px;
+  margin-left: 7px;
+}
+.h11{
+  color: white;
+  font-size: 21px;
+  margin-left: 7px;
+  margin-top: -1%
+}
+.icon{
+  margin-left: 63%;
+  margin-top: -28%;
+}
+
+.observ{
+  display: flex;
+  margin-right: 0%;
+  width: 91%;
+}
+.observ-box{
+  width: 120%;
+  height: 270%
+}
+.check-input1{
+  display: flex;
+  margin-right: 69%
+}
+.ckeck-input2{
+  display: flex;
+  margin-right: 73%;
+}
+.button{
+  margin-top: 27%;
+  margin-left: 73%;
+}	
+
